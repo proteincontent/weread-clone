@@ -50,3 +50,5 @@ server.log
 
 # crush
 .crush
+*storybook.log
+storybook-static
