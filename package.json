@@ -94,7 +94,7 @@
     "@storybook/addon-onboarding": "^9.1.1",
     "@storybook/addon-vitest": "^9.1.1",
     "@storybook/react-vite": "^9.1.1",
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
