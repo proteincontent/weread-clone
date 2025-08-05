@@ -3,10 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
-  // 禁用 Next.js 热重载，由 nodemon 处理重编译
-  reactStrictMode: false,
+  // Enable React Strict Mode for better production behavior
+  reactStrictMode: true,
   webpack: (config, { dev }) => {
     if (dev) {
       // 禁用 webpack 的热模块替换
@@ -17,8 +17,8 @@ const nextConfig: NextConfig = {
     return config;
   },
   eslint: {
-    // 构建时忽略ESLint错误
-    ignoreDuringBuilds: true,
+    // Catch ESLint errors during build for production deployment
+    ignoreDuringBuilds: false,
   },
 };
 
